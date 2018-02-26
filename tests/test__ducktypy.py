@@ -50,3 +50,7 @@ class TestDuck(TestCase):
     def test_duckclass_is_cached(self):
         duck = Duck.has('quack', 'walk')
         self.assertIs(duck, Duck.has('quack', 'walk'))
+
+    def test_ducktypes_are_subclassing_eachother(self):
+        self.assertIsInstance(Duck.has('wing', 'fly'), Duck.has('wing'))
+
