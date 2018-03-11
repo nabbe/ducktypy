@@ -47,3 +47,13 @@ What is returned from `Duck.has` is a class object.
 This "Duck"-ed class deals other instances/classes as one of (instance of) subclass,
 when the other one has all attributes which "Duck"-ed class `has` . 
 
+TODO
+-----
+
+- make it mypy-compat
+- make it pytypes-compat
+- write more tests
+- make it `pip install`-able
+    - but I am not so hurry for it...
+    - this is toy project now, and changing for mypy-compat can introduce breaking interface changes.
+- decide if support python 2.7
