@@ -55,5 +55,5 @@ class TestDuck(TestCase):
         self.assertIs(duck, Duck.has('quack', 'walk'))
 
     def test_ducktypes_are_subclassing_eachother(self):
-        self.assertIsInstance(Duck.has('wing', 'fly'), Duck.has('wing'))
+        self.assertTrue(issubclass(Duck.has('wing', 'fly'), Duck.has('wing')))
 
