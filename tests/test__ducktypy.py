@@ -33,6 +33,9 @@ class ExampleException2(Exception):
 
 class TestDuck(TestCase):
 
+    def test_duck_is_a_type(self):
+        self.assertIsInstance(Duck.has('a'), type)
+
     def test_isinstance_compliant(self):
         self.assertIsInstance(Albatross(), Duck.has('wing', 'fly'))
         self.assertNotIsInstance(Ostrich(), Duck.has('wing', 'fly'))
