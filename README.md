@@ -51,7 +51,6 @@ TODO
 -----
 
 - make it mypy-compat
-- make it pytypes-compat
 - write more tests
 - make it `pip install`-able
     - but I am not so hurry for it...
